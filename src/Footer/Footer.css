@@ -1,0 +1,39 @@
+.footer{
+    padding: 6rem 12rem 12rem;
+}
+.footer .flex{
+    display: flex;
+}
+.footer .flex .tinyBody{
+    margin-top: 2.2rem;
+    margin-bottom: 3rem;
+}
+.footer .flex .belowFlex{
+    display: flex;
+}
+.footer .flex .belowFlex>svg:not(:last-child){
+    margin-right: 3.8rem;
+}
+.footer .flex>div:not(:first-child){
+    margin-left: 8rem;
+}
+.footer .flex .left{
+    margin-right: auto;
+    width: 100%;
+    max-width: 32rem;
+}
+.footer .flex .head{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: var(--color-neutral9);
+    padding-bottom: 0.6rem;
+}
+
+.footer .flex li{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--color-neutral5);
+    padding-top: 1.8rem;
+}

@@ -1,0 +1,75 @@
+.tour{
+    padding: 6rem 12rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.tour .head{
+    margin-bottom: 1.6rem;
+}
+.tour .wrapper1{
+    padding: 3rem 10rem 3rem 4rem ;
+}
+.tour .wrapper1 .detail{
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin: 1.6rem 0;
+    color: var(--color-blue);
+    opacity: 0.75;
+}
+.tour .wrapper1 .midFlex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--color-neutral7);
+    margin: 2.4rem 0 1rem;
+}
+.tour .wrapper1 .midFlex>div{
+    margin-bottom: 2.6rem;
+}
+.tour .wrapper1 .midFlex svg{
+    margin-right: 2rem;
+}
+.tour .wrapper1 .overline{
+    height: 2px;
+    width: 100%;
+    background-color: #F0F3FD;
+    margin-bottom: 3.2rem;
+}
+.tour .wrapper1 .bottomFlex{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.tour .wrapper2{
+    padding-left:9rem;
+}
+.tour .wrapper2 .headImg{
+    width: 100%;
+    max-width: 48.8rem;
+    height: 100%;
+    max-height:41.6rem ;
+}
+.tour .wrapper2 .bottomFlex{
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    margin-left: -4rem;
+    margin-top: -12.5rem;
+}
+.tour .wrapper2 .bottomFlex img{
+    width: 100%;
+    max-width: 9.6rem;
+    height: 8rem;
+}
+.tour .wrapper2 .bottomFlex>img{
+    padding-right: 0.8rem;
+}
+.tour .wrapper2 .bottomFlex .diff{
+    width: 60%;
+    max-width: 29.6rem;
+    padding-right: 1.2rem;
+    height: 16.8rem;
+}

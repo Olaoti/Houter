@@ -1,0 +1,81 @@
+.blogs{
+    padding: 6rem 12rem;
+}
+.blogs .btn{
+    margin:2.4rem auto 1.8rem;
+}
+.blogs .blogsGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.blogs .blogsGrid .leftGrid{
+    padding-top: 1.1rem;
+}
+.blogs .blogsGrid .leftGrid>div{
+    padding: 1.1rem 0 3.2rem ;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.blogs .blogsGrid .leftGrid .img{
+    width: 100%;
+    max-width: 20rem;
+    height: 100%;
+    max-height: 14.4rem;
+}
+.blogs .blogsGrid .leftGrid .inner{
+    padding: 0 3.2rem 0 2.8rem;
+}
+.blogs .blogsGrid .innerTop{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: var(--color-neutral7);
+}
+.blogs .innerTop img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    margin-right: 1.6rem;
+}
+.blogs .blogsGrid .info{
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: var(--color-blue);
+    padding: 1.2rem 0 1.6rem;
+}
+.blogs .blogsGrid .rightGrid .info{
+    font-size: 2.4rem;
+}
+.blogs .blogsGrid .inner .innerDown{
+    display: flex;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--color-neutral5);
+}
+.blogs .blogsGrid .inner .innerDown svg{
+    margin-right: 1.4rem;
+    height: 2rem;
+    width: 2rem;
+}
+.blogs .blogsGrid .inner .innerDown span{
+    padding: 0 0.5rem;
+}
+.blogs .blogsGrid .inner .innerDown span:not(:last-child){
+    border-right: 1px solid var(--color-neutral5);
+}
+.blogs .blogsGrid .rightGrid{
+    padding: 2.4rem 0 2.4rem 4rem;
+}
+.blogs .blogsGrid .rightGrid .image{
+    width: 100%;
+    max-width: 56rem;
+    height: 28rem;
+    margin-bottom: 2.4rem;
+}
+.blogs .blogsGrid .rightGrid .inner .innerDown{
+    padding-top: 1.6rem;
+}

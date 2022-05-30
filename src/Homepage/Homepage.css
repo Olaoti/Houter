@@ -1,0 +1,164 @@
+:root{
+    --color-neutral100:#F0F3FD;
+    --color-neutral1: #626687;
+    --color-neutral5: #888B97;
+    --color-neutral7: #3C4563;
+    --color-neutral9:#0E1735;
+    --color-blue:#1B1C57;
+    --color-bg-green: rgba(209, 250, 229, 0.3);
+    --color-deep-green: #047857;
+    --color-green: #10B981;
+    --color-yellow: #F59E0B;
+  }
+  .logo{
+      display: flex;
+      align-items: center;
+  }
+  .logo .logobox {
+      position:relative;
+  }
+  .logo .logobox .logobox1, .logo .logobox .logobox2{
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 4px 4px 24px 4px;
+  }
+  .logo .logobox .logobox1{
+      background-color: var(--color-yellow);
+  }
+  .logo .logobox .logobox2{
+      background-color: #4BE4C9;
+      position: absolute;
+      top: 0.4rem;
+      left: 0.4rem;
+  }
+  .logo .logoname{
+    margin-left: 1.2rem;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-blue);
+  }
+  .header{
+      display: flex;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: space-between;
+      font-style: normal;
+      padding: 4.5rem 12rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--color-neutral100);
+    text-transform: capitalize;
+    position: fixed;
+    z-index: 10;
+  }
+ 
+  .header .logo{
+      margin-right: auto;
+  }
+  .header .innerFlex{
+      display: flex;
+      cursor: pointer;
+  }
+  .header .innerFlex>div{
+    background-color: rgba(255, 255, 255,0.1);
+    border: 1px solid rgba(255, 255, 255,0.3);
+    padding: 0.8rem 1.6rem;
+    margin-right:2.4rem;
+    border-radius:3.2rem ;
+  }
+  .header .property{
+      position: relative;
+  }
+  .header .property .iconad{
+      height: 1.4rem;
+      width: 2rem;
+      vertical-align: bottom;
+  }
+  .header .property ul.contents{
+    display: none;
+    
+  }
+header .property .head:hover + ul{
+    display: block;
+    background-color: rgba(255, 255, 255,0.4);
+    padding: 1.5rem;
+    position: absolute;
+    width: 200%;
+    margin-top: 1rem;
+    margin-left: -10%;
+}
+  /* for main home page***/
+  .mainhome .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 100%;
+      padding-bottom: 6rem;
+  }
+  .mainhome .left{
+      width:50vw;
+      padding: 18.2rem 12rem 0 10rem;
+  }
+  .mainhome .left .head{
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 5rem;
+      color: var(--color-blue);
+      margin-bottom: 2.4rem;
+      text-transform: capitalize;
+  }
+ .mainhome .left .head span{
+     color: white;
+     text-shadow:2px 0 0 #1B1C57, -2px 0 0 #1B1C57, 0 2px 0 #1B1C57, 0 -2px 0 #1B1C57;
+ }
+ .mainhome .left .searchflex{
+     display: flex;
+     width: 100%;
+     padding: 0.4rem;
+     border-radius: 5rem;
+     margin: 3.2rem 0;
+     border: 2px solid #c8d2ec;
+     align-items: center;
+ }
+ .mainhome .left .searchflex input{
+     text-decoration: none;
+     border: none;
+     background-color: transparent;
+     vertical-align: bottom;
+     width: 100%;
+ }
+ .mainhome .left .searchflex input::placeholder{
+     color: var(--color-neutral5);
+     font-size: 1.4rem;
+    width: 100%;
+ }
+.mainhome .left .searchflex>div:not(:last-child){
+    padding-left: 1.3rem;
+    font-size: 1.4rem;
+    height: 2.2rem;
+    font-weight: 500;
+}
+.mainhome .left .searchflex .btn{
+    margin-left: auto;
+    display: flex;
+}
+.mainhome .left .searchflex .btn img{
+    width: 2rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    transform: rotate(-90deg);
+    margin-left: 1rem;
+}
+.mainhome .left .minibody.below{
+    line-height: 3.2rem;
+}
+.mainhome .left .belowflex>img:not(:last-child){
+    padding-right: 3.2rem;
+}
+.mainhome .right{
+    width: 100%;
+}
+.mainhome .right img{
+    width: 100%;
+}
