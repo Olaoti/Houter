@@ -7,6 +7,11 @@ import tl3 from "../Assets/tl3.png";
 import tl4 from "../Assets/tl4.png";
 import homeimg from "../Assets/homeimg.png";
 import ad from "../Assets/arrowdown.svg";
+import rhh1 from "../Assets/rhh1.png";
+import rhh2 from "../Assets/rhh2.png";
+import rhh3 from "../Assets/rhh3.png";
+import rhh4 from "../Assets/rhh4.png";
+import shi from "../Assets/shi.png";
 
 const Homepage = () => {
   return (
@@ -51,7 +56,32 @@ const Homepage = () => {
           </div>
         </div>
         <div className="right">
-          <img src={homeimg} alt="" />
+          <div className="floatFlex">
+            <div className="inFlex">
+              <img src={rhh1} alt="" className="rhh1" />
+              <img src={rhh2} alt="" className="rhh2" />
+              <img src={rhh3} alt="" className="rhh3" />
+              <div className="inWord">
+                <div className="top">1K+ people</div>
+                <div className="bottom">Successfully getting home</div>
+              </div>
+            </div>
+            <div className="inFlex">
+              <img src={shi} alt="" className="shi" />
+              <div className="inWord">
+                <div className="top">56 Houses</div>
+                <div className="bottom">Sold Monthly</div>
+              </div>
+            </div>
+            <div className="inFlex">
+              <img src={rhh4} alt="" className="rhh4" />
+              <div className="inWord">
+                <div className="top">4K+</div>
+                <div className="bottom">Looking for homes</div>
+              </div>
+            </div>
+          </div>
+          <img src={homeimg} alt="" className="homeImg" />
         </div>
       </div>
     </div>

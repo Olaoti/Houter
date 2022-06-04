@@ -1,17 +1,28 @@
 import React from "react";
 import "./Subscription.css";
-/*import sr1 from "../Assets/sr1.png";
+import sr1 from "../Assets/sr1.png";
 import sr2 from "../Assets/sr2.png";
 import sr3 from "../Assets/sr3.png";
+import sr4 from "../Assets/sr4.png";
 import sl1 from "../Assets/sl1.png";
 import sl2 from "../Assets/sl2.png";
 import sl3 from "../Assets/sl3.png";
-import sl4 from "../Assets/sl4.png";*/
+import sl4 from "../Assets/sl4.png";
 
 const Subscription = () => {
   return (
     <div className="subscription">
       <div className="container">
+        <div className="backgrounds">
+          <img src={sr1} alt="" className="sr1" />
+          <img src={sr2} alt="" className="sr2" />
+          <img src={sr3} alt="" className="sr3" />
+          <img src={sr4} alt="" className="sr4" />
+          <img src={sl1} alt="" className="sl1" />
+          <img src={sl2} alt="" className="sl2" />
+          <img src={sl3} alt="" className="sl3" />
+          <img src={sl4} alt="" className="sl4" />
+        </div>
         <div className="head">
           Subscribe For More Info <br /> and update from Hounter
         </div>

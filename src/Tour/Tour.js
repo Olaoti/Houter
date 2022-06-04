@@ -22,6 +22,14 @@ const Tour = () => {
           Houses recommended by our partners that have been curated to become
           the home of your dreams!
         </div>
+        <div className="wrapper2 upp">
+          <img src={th1} alt="" className="headImg" />
+          <div className="bottomFlex">
+            <img src={th2} alt="" className="diff" />
+            <img src={th3} alt="" />
+            <img src={th4} alt="" />
+          </div>
+        </div>
         <div className="detail">House Detail</div>
         <div className="midFlex">
           <div>
@@ -99,7 +107,7 @@ const Tour = () => {
           <div className="btn">Contact now</div>
         </div>
       </div>
-      <div className="wrapper2">
+      <div className="wrapper2 down">
         <img src={th1} alt="" className="headImg" />
         <div className="bottomFlex">
           <img src={th2} alt="" className="diff" />

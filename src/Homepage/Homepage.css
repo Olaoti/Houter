@@ -50,7 +50,7 @@
     line-height: 1.8rem;
     color: var(--color-neutral100);
     text-transform: capitalize;
-    position: fixed;
+    position: absolute;
     z-index: 10;
   }
  
@@ -68,6 +68,10 @@
     margin-right:2.4rem;
     border-radius:3.2rem ;
   }
+  .header .innerFlex>div:hover{
+      background-color: rgba(27, 28, 87, 0.1);
+      transition: all 300ms ease;
+  }
   .header .property{
       position: relative;
   }
@@ -76,18 +80,25 @@
       width: 2rem;
       vertical-align: bottom;
   }
-  .header .property ul.contents{
-    display: none;
-    
-  }
-header .property .head:hover + ul{
-    display: block;
-    background-color: rgba(255, 255, 255,0.4);
+  .header .property ul{
+    background-color: rgba(255, 255, 255,0.8);
     padding: 1.5rem;
     position: absolute;
-    width: 200%;
+    visibility: hidden;
     margin-top: 1rem;
-    margin-left: -10%;
+    opacity: 0;
+  }
+  
+.header .property:hover ul{
+    transition: all 300ms ease;
+    opacity: 0.9;
+    visibility: visible;
+    width: max-content;
+    color: var(--color-blue); 
+    border-radius: 0 10px 5px 0;
+}
+.header .property ul li{
+    margin-left: 2rem;
 }
   /* for main home page***/
   .mainhome .container{
@@ -97,7 +108,7 @@ header .property .head:hover + ul{
       padding-bottom: 6rem;
   }
   .mainhome .left{
-      width:50vw;
+      width:100%;
       padding: 18.2rem 12rem 0 10rem;
   }
   .mainhome .left .head{
@@ -125,7 +136,6 @@ header .property .head:hover + ul{
      text-decoration: none;
      border: none;
      background-color: transparent;
-     vertical-align: bottom;
      width: 100%;
  }
  .mainhome .left .searchflex input::placeholder{
@@ -156,9 +166,61 @@ header .property .head:hover + ul{
 .mainhome .left .belowflex>img:not(:last-child){
     padding-right: 3.2rem;
 }
+
 .mainhome .right{
     width: 100%;
+    position: relative;
 }
-.mainhome .right img{
+.mainhome .right img.homeImg{
     width: 100%;
+    height: 100%;
+}
+.mainhome .right .floatFlex{
+    display: flex;
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+    width: calc(100% - 6rem);
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.mainhome .right .floatFlex::-webkit-scrollbar{
+    display: none;
+}
+.mainhome .right .floatFlex>div:not(:last-child){
+    margin-right: 1.6rem;
+}
+.mainhome .right .floatFlex .inFlex{
+    display: flex;
+    background-color: white;
+    padding: 1.5rem 2.4rem;
+    border-radius: 3.2rem;
+    align-items: center;
+}
+.mainhome .right .floatFlex .inFlex img{
+    width: 5.6rem;
+    height: 5.6rem;
+}
+.mainhome .right .floatFlex .inFlex img.rhh2,
+.mainhome .right .floatFlex .inFlex img.rhh3{
+    margin-left: -2.8rem;
+}
+.mainhome .right .floatFlex .inFlex .inWord{
+    margin-left: 1.6rem;
+}
+.mainhome .right .floatFlex .inFlex .inWord .top{
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--color-blue);
+    width: max-content;
+}
+.mainhome .right .floatFlex .inFlex .inWord .bottom{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #68799F;
+    width: max-content;
+    margin-top: 2px;
 }

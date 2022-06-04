@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
 :root{
   --color-neutral1: #626687;
   --color-neutral5: #888B97;
@@ -15,8 +17,8 @@
   padding: 0;
   text-decoration: none;
   outline: none;
-  list-style: none;
   border: 0;
+  list-style: none;
 }
 
 a {
@@ -28,10 +30,14 @@ html {
   width: 100%;
   height: 100%;
   font-size: 62.5%;
+  font-family: 'Lexend', sans-serif;
 }
 body{
   background-color: white;
   width:100%;
+}
+.App{
+  width: 100%;
 }
 .btn{
   width: fit-content ;
@@ -43,10 +49,17 @@ body{
   padding: .8rem 1.6rem;
   border-radius: 5rem;
   height: max-content;
+  cursor: pointer;
 }
-.minibody{
+.btn:hover{
+  background-color: var(--color-bg-green);
+  color: var(--color-deep-green);
   font-size: 1.6rem;
-  height:2.8rem;
+  transition: all 300ms ease;
+}
+.minibody{ 
+  font-size: 1.6rem;
+  line-height: 2.8rem;
   font-weight: 400;
   color: var(--color-neutral1);
 }

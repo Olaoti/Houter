@@ -46,6 +46,9 @@
 .tour .wrapper2{
     padding-left:9rem;
 }
+.tour .wrapper2.upp{
+    display: none;
+}
 .tour .wrapper2 .headImg{
     width: 100%;
     max-width: 48.8rem;

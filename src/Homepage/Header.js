@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 import ad from "../Assets/arrowdown.svg";
 
 const Header = () => {
+  const [showContents, setShowContents] = useState(false);
   return (
     <div className="header">
       <Logo />
@@ -17,10 +18,9 @@ const Header = () => {
             </span>
           </div>
           <ul className="contents">
-            <li>Cantara Property</li>
-            <li>Cantara Property</li>
-            <li>Cantara Property</li>
-            <li>Cantara Property</li>
+            <li>Home</li>
+            <li>Villa</li>
+            <li>Apartment</li>
           </ul>
         </div>
         <div className="btnn"> Sign up</div>

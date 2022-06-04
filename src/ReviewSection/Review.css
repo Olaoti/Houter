@@ -4,8 +4,14 @@
 .review .wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    overflow-x: scroll;
     padding-bottom: 6rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.review .wrapper::-webkit-scrollbar{
+    display: none;
 }
 .review .wrapper>div{
     width: 55vw;

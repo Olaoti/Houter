@@ -52,7 +52,7 @@ const Blogs = () => {
         <div className="leftGrid">
           {blogInfos.map((blog) => (
             <div key={blog.id}>
-              <img src={blog.bImg} alt="" />
+              <img src={blog.bImg} alt="" className="bImg" />
               <div className="inner">
                 <div className="innerTop">
                   <img src={blog.beImg} alt="" />
