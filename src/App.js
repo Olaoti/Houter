@@ -6,7 +6,7 @@ import Review from "./ReviewSection/Review";
 import Blogs from "./Blogs/Blogs";
 import Subscription from "./Subscription/Subscription";
 import Footer from "./Footer/Footer";
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Homepage />
@@ -18,6 +18,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
